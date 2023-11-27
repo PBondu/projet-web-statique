@@ -1,0 +1,18 @@
+:root{
+/*déclaration des variables pour les couleurs*/
+--white: #FFFFFF;
+--orange: #FAB637;
+--red: #FF4848;
+--brown:#CC6119;
+--grey: #CC6119;
+--black: #232628;
+--blue: #6C98E1;
+}
+
+nav{ /*cache la barre de navigation pour la vue mobile*/
+    display: none; 
+}
+
+h1, h2, address{
+    text-transform: capitalize;
+}
