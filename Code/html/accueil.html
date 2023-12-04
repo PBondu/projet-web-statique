@@ -19,37 +19,37 @@
 <body>
     <header>
         <h1>Club auto</h1> <!--Titre du header-->
-        <div>
+        <div id="hContainer">
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
             <div>
-                <h2>Adresse :</h2> <!--Adresse Header-->
+                <h2 class="texteOrange">Adresse :</h2> <!--Adresse Header-->
                 <adress>Avenue charles de gaulle 75000 paris</adress>
             </div>
-            <div>
-                <h2>Téléphone :</h2><!--Téléphone Header-->
+            <div id="hTel">
+                <h2 class="texteOrange">Téléphone :</h2><!--Téléphone Header-->
                 <p>01 23 45 67 89</p>
             </div>
             <div>
-                <h2>Ouverture :</h2> <!--Horaire Header-->
+                <h2 class="texteOrange">Ouverture :</h2> <!--Horaire Header-->
                 <p>Du lundi au samedi</p>
-                <h2>Horaires :</h2>
+                <h2 class="texteOrange">Horaires :</h2>
                 <p>De 9h à 17h</p>
             </div>
-        </div>
-        <div><!--Div pour le style contenant les liens réseaux sociaux-->
-            <a href="">
-                <!--import du logo facebook-->
-                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-            </a>
-            <a href="">
-                <!--import du logo twitter-->
-                <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-            </a>
+            <div><!--Div pour le style contenant les liens réseaux sociaux-->
+                <a href="">
+                    <!--import du logo facebook-->
+                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                </a>
+                <a href="">
+                    <!--import du logo twitter-->
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+            </div>
         </div>
     </header>
     <nav><!--barre de navigation-->
         <ul><!--liste de liens de navigation-->
-            <li>accueil</li> 
+            <li>accueil</li>
             <li>vente</li>
             <li>location</li>
             <li>contact</li>
@@ -57,7 +57,8 @@
     </nav>
     <section><!--Bannière de haut de page avec une image et un titre-->
         <picture>
-            <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule1.jpg"
+            <img id="banniereDesktop"
+                src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule1.jpg"
                 alt="Voitures de présentées les unes dérrière les autres">
         </picture>
         <h1>Club auto <span>Le meilleur de l'automobile</span></h1><!--titre en dessous de la banière photo-->

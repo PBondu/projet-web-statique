@@ -9,10 +9,45 @@
 --blue: #6C98E1;
 }
 
+*{
+    font-family: 'open-sans';
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    background-color: var(--black);
+    color:var(--white)
+}
+
+.texteOrange{
+    color: var(--brown) !important;
+}
+
+#hContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+h1, h2, h1 span{
+    text-transform: uppercase;
+    font-family: 'montserrat' !important;
+}
+
 nav{ /*cache la barre de navigation pour la vue mobile*/
     display: none; 
 }
 
-h1, h2, address{
-    text-transform: capitalize;
+
+/*header, #banniereDesktop{
+    display: none;
+}
+
+#hTel{
+    display: inline-block !important;
+}*/
+
+img{
+    width: 100%;
 }
