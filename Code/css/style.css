@@ -11,24 +11,62 @@
 
 *{
     font-family: 'open-sans';
+    box-sizing: border-box;
+    margin: 0;
 }
 
 header{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
     height: 80px;
     background-color: var(--black);
-    color:var(--white)
+    color:var(--white);
+    font-weight: bold;
 }
 
 .texteOrange{
     color: var(--brown) !important;
+    font-size: .8em;
 }
 
-#hContainer{
+#headerCtr{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
 }
+
+#headerAdresse, #headerTel, #horaireEtOuvertureCtr{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#headerAdresse{
+    justify-content: center;
+}
+
+#headerTel{
+    justify-content: center;
+}
+
+#horaireEtOuvertureCtr{
+    justify-content: space-evenly;
+    padding: 1% 0;
+}
+
+.horaireCtr{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.horaireCtr p{
+    padding-left: 10px;
+}
+
 
 h1, h2, h1 span{
     text-transform: uppercase;
@@ -51,3 +89,16 @@ nav{ /*cache la barre de navigation pour la vue mobile*/
 img{
     width: 100%;
 }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}

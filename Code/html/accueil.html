@@ -18,24 +18,28 @@
 
 <body>
     <header>
-        <h1>Club auto</h1> <!--Titre du header-->
-        <div id="hContainer">
+        <div class="col-9" id="headerCtr">
+            <h1>Club auto</h1> <!--Titre du header-->
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
-            <div>
+            <div id="headerAdresse">
                 <h2 class="texteOrange">Adresse :</h2> <!--Adresse Header-->
                 <adress>Avenue charles de gaulle 75000 paris</adress>
             </div>
-            <div id="hTel">
+            <div id="headerTel">
                 <h2 class="texteOrange">Téléphone :</h2><!--Téléphone Header-->
                 <p>01 23 45 67 89</p>
             </div>
-            <div>
+            <div id="horaireEtOuvertureCtr"><!--Permet au css d'aligner correctement le texte-->
+                <div class="horaireCtr">
                 <h2 class="texteOrange">Ouverture :</h2> <!--Horaire Header-->
                 <p>Du lundi au samedi</p>
+                </div>
+                <div class="horaireCtr">
                 <h2 class="texteOrange">Horaires :</h2>
                 <p>De 9h à 17h</p>
+                </div>
             </div>
-            <div><!--Div pour le style contenant les liens réseaux sociaux-->
+            <div id="socialMediaCtr"><!--Div pour le style contenant les liens réseaux sociaux-->
                 <a href="">
                     <!--import du logo facebook-->
                     <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -212,7 +216,7 @@
             </div>
             <div><!--div titre + links-->
                 <h1>reseaux sociaux</h1>
-                <div><!--div container social media links-->
+                <div><!--div Ctr social media links-->
                     <ul><!--liste des liens social media-->
                         <li><a href=""><i class="fa-brands fa-square-facebook" style="color: #000000;"></i></a></li>
                         <li><a href=""></a><i class="fa-brands fa-square-twitter" style="color: #000000;"></i></a></li>
