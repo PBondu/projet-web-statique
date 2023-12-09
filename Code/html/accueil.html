@@ -18,28 +18,34 @@
 
 <body>
     <header>
-        <div class="col-9" id="headerCtr">
-            <h1>Club auto</h1> <!--Titre du header-->
+        <div class="headerCtr col-9">
+            <h1 class="col-3">Club auto</h1> <!--Titre du header-->
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
-            <div id="headerAdresse">
-                <h2 class="texteOrange">Adresse :</h2> <!--Adresse Header-->
-                <adress>Avenue charles de gaulle 75000 paris</adress>
+            <div class="headerLogo col-3">
+                <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icone-adresse.png">
+                <div class="headerAdresse">
+                    <h2 class="texteOrange headerFontSize">Adresse :</h2> <!--Adresse Header-->
+                    <adress>Avenue charles de gaulle 75000 paris</adress>
+                </div>
             </div>
-            <div id="headerTel">
-                <h2 class="texteOrange">Téléphone :</h2><!--Téléphone Header-->
-                <p>01 23 45 67 89</p>
-            </div>
-            <div id="horaireEtOuvertureCtr"><!--Permet au css d'aligner correctement le texte-->
+            <div class="headerLogo col-3">
+                <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon-telephone.png">
+                <div class="headerTel">
+                    <h2 class="texteOrange headerFontSize">Téléphone :</h2><!--Téléphone Header-->
+                    <p>01 23 45 67 89</p>
+                </div>
+            </div>  
+            <div class="horaireEtOuvertureCtr col-3"><!--Permet au css d'aligner correctement le texte-->
                 <div class="horaireCtr">
-                <h2 class="texteOrange">Ouverture :</h2> <!--Horaire Header-->
+                <h2 class="texteOrange headerFontSize">Ouverture :</h2> <!--Horaire Header-->
                 <p>Du lundi au samedi</p>
                 </div>
                 <div class="horaireCtr">
-                <h2 class="texteOrange">Horaires :</h2>
+                <h2 class="texteOrange headerFontSize">Horaires :</h2>
                 <p>De 9h à 17h</p>
                 </div>
             </div>
-            <div id="socialMediaCtr"><!--Div pour le style contenant les liens réseaux sociaux-->
+            <div class="socialMediaCtr col-1"><!--Div pour le style contenant les liens réseaux sociaux-->
                 <a href="">
                     <!--import du logo facebook-->
                     <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
@@ -53,58 +59,68 @@
     </header>
     <nav><!--barre de navigation-->
         <ul><!--liste de liens de navigation-->
-            <li>accueil</li>
-            <li>vente</li>
-            <li>location</li>
-            <li>contact</li>
+            <li><a href="">accueil</a></li>
+            <li><a href="">vente</a></li>
+            <li><a href="">location</a></li>
+            <li><a href="">contact</a></li>
         </ul>
     </nav>
     <section><!--Bannière de haut de page avec une image et un titre-->
-        <picture>
-            <img id="banniereDesktop"
-                src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule1.jpg"
-                alt="Voitures de présentées les unes dérrière les autres">
-        </picture>
-        <h1>Club auto <span>Le meilleur de l'automobile</span></h1><!--titre en dessous de la banière photo-->
-        <div><!--Div contenenant l'article de présentation n°1-->
-            <picture><!--image située à gauche de la présentation-->
-                <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/clients.jpg">
-            </picture>
-            <h1>Bienvenue chez <span>Club auto</span></h1><!--titre et texte pour la présentation n°1-->
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci architecto labore! Dolor
-                quidem
-                molestiae, labore quibusdam sequi adipisci facere.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis voluptatibus quod incidunt
-                voluptatem
-                saepe libero soluta possimus! Quis vitae, autem enim cumque ratione quibusdam error quidem dolor porro,
-                est
-                ipsa
-                aperiam! Iusto, deserunt aliquid itaque error temporibus a provident voluptatum molestias fuga? Nobis,
-                facere sunt
-                exercitationem adipisci asperiores impedit.</p>
-        </div>
-        <div><!--Div contenenant l'article de présentation n°2-->
-            <h1>Le meilleur de l'automobile</h1><!--titre et texte pour la présentation n°2-->
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium quidem iure nobis debitis eius
-                incidunt
-                repellat iste minima, exercitationem velit vel error veniam impedit dolore nulla fugit alias quo
-                temporibus?
-                Libero quasi, eius veniam in magnam itaque laudantium porro saepe dolorem laborum amet ut nam ab
-                aliquid?
-                Impedit,
-                et.</p>
-            <ul><!--liste des points forts de l'entreprise-->
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-            </ul>
-            <picture><!--image située à droite de la présentation n°2-->
-                <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/entretien.jpg">
-            </picture>
-        </div>
+            <div id="banniereDesktop">
+                <img 
+                    src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule1.jpg"
+                    alt="Voitures de présentées les unes dérrière les autres">
+                <div class="sectionTitle">
+                    <h1 class="col-9">Club auto <span class="texteOrange">Le meilleur de l'automobile</span></h1><!--titre en dessous de la banière photo-->
+                </div>  
+            </div>
+        <div class="articleMainCtr">
+            <div class="articleMain col-9"><!--Div contenenant l'article de présentation n°1-->
+                <div>
+                    <picture><!--image située à gauche de la présentation-->
+                        <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/clients.jpg">
+                    </picture>
+                </div>
+                <div class="articleText">
+                    <h1>Bienvenue chez <span class="texteOrange">Club auto</span></h1><!--titre et texte pour la présentation n°1-->
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci architecto labore! Dolor
+                        quidem
+                        molestiae, labore quibusdam sequi adipisci facere.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis voluptatibus quod incidunt
+                        voluptatem
+                        saepe libero soluta possimus! Quis vitae, autem enim cumque ratione quibusdam error quidem dolor porro,
+                        est
+                        ipsa
+                        aperiam! Iusto, deserunt aliquid itaque error temporibus a provident voluptatum molestias fuga? Nobis,
+                        facere sunt
+                        exercitationem adipisci asperiores impedit.</p>
+                </div>
+            </div>
+            <div class="articleMain col-9"><!--Div contenenant l'article de présentation n°2-->
+                <div class="articleText">
+                    <h1>Le meilleur de l'automobile</h1><!--titre et texte pour la présentation n°2-->
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium quidem iure nobis debitis eius
+                        incidunt
+                        repellat iste minima, exercitationem velit vel error veniam impedit dolore nulla fugit alias quo
+                        temporibus?
+                        Libero quasi, eius veniam in magnam itaque laudantium porro saepe dolorem laborum amet ut nam ab
+                        aliquid?
+                        Impedit,
+                        et.</p>
+                    <ul><!--liste des points forts de l'entreprise-->
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <picture><!--image située à droite de la présentation n°2-->
+                    <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/entretien.jpg">
+                </picture>
+            </div>
+        </div> 
         <div><!--Div contenant un bouton pour la page de vente et un pour la page de location-->
             <div><!--bouton d'achat-->
                 <h1>Vous souhaitez louer ?</h1>
