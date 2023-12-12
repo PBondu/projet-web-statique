@@ -538,6 +538,7 @@ footer > div > div{/*div de chaque info*/
     display: flex;
     justify-content: space-around;
     align-items: center;
+    justify-content: center;
     border-radius: 0;
     height: 40px;
     width: 40px;
