@@ -48,11 +48,11 @@
             <div class="socialMediaCtr col-1"><!--Div pour le style contenant les liens réseaux sociaux-->
                 <a href="">
                     <!--import du logo facebook-->
-                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook-f headerSocial" style="color: #ffffff;"></i>
                 </a>
                 <a href="">
                     <!--import du logo twitter-->
-                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter headerSocial" style="color: #ffffff;"></i>
                 </a>
             </div>
         </div>
@@ -118,7 +118,7 @@
         </article> 
         <div class="frameCtrBg"><!--Div contenant un bouton pour la page de vente et un pour la page de location-->
             <div class="frameCtr col-8">
-                <div class="achatFrame bgLoca"><!--bouton de loca-->
+                <div class="achatFrame bgJaune"><!--bouton de loca-->
                     <h2>Vous souhaitez louer ?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate, aliquam aliquid eius suscipit
                         optio
@@ -127,7 +127,7 @@
                         ipsa voluptates laudantium dolores vitae sapiente.
                     </p>
                 </div>
-                <div class="achatFrame bgBuy"><!--bouton d'achat-->
+                <div class="achatFrame bgRouge"><!--bouton d'achat-->
                     <h2>Vous souhaitez acheter ?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate, aliquam aliquid eius suscipit
                         optio
@@ -173,82 +173,91 @@
                     </li>
                 </ul>
         </div>
-        <div><!--Div contenant les différentes qualités de l'entreprise-->
+        <div class="nosQualiteCtr"><!--Div contenant les différentes qualités de l'entreprise-->
             <h1>Pourquoi nous choisir ?</h1>
-            <div><!--div contenant les quatres div correspondantes à chaque qualité de l'entreprise-->
-                <div><!--div contenant le logo et le texte-->
+            <div class="lesQuatresQualitesCtr col-11"><!--div contenant les quatres div correspondantes à chaque qualité de l'entreprise-->
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
                     <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon1.png">
-                    <h2>Financement</h2><!--énoncé de la qualité-->
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut numquam eum sit quia, eveniet
+                    <div>
+                        <h2>Financement</h2><!--énoncé de la qualité-->
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut numquam eum sit quia, eveniet
                         excepturi voluptates dolores porro voluptatem quaerat.</p>
+                    </div>
                 </div>
-                <div><!--div contenant le logo et le texte-->
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
                     <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon2.png">
-                    <h2>Réactivité de l'équipe technique</h2><!--énoncé de la qualité-->
-                    <p>Nihil laboriosam eligendi, odit, fugiat quae doloremque excepturi hic placeat nisi temporibus
+                    <div>
+                        <h2>Réactivité de l'équipe technique</h2><!--énoncé de la qualité-->
+                        <p>Nihil laboriosam eligendi, odit, fugiat quae doloremque excepturi hic placeat nisi temporibus
                         maxime aspernatur! Nam nulla dicta odio id itaque.</p>
+                    </div>
                 </div>
-                <div><!--div contenant le logo et le texte-->
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
                     <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon3.png">
-                    <h2>A l'écoute de notre clientèle</h2><!--énoncé de la qualité-->
-                    <p>Assumenda veniam minus ex ullam? Recusandae tempore nihil doloribus at amet, ea earum qui eos
+                    <div>
+                        <h2>A l'écoute de notre clientèle</h2><!--énoncé de la qualité-->
+                        <p>Assumenda veniam minus ex ullam? Recusandae tempore nihil doloribus at amet, ea earum qui eos
                         ullam, est pariatur sint harum?</p>
+                    </div>
                 </div>
-                <div><!--div contenant le logo et le texte-->
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
                     <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon4.png">
-                    <h2>Service & maintenance</h2><!--énoncé de la qualité-->
-                    <p>Quo aspernatur non nemo quidem voluptate praesentium velit atque eum, error asperiores nesciunt
+                    <div>
+                        <h2>Service & maintenance</h2><!--énoncé de la qualité-->
+                        <p>Quo aspernatur non nemo quidem voluptate praesentium velit atque eum, error asperiores nesciunt
                         provident magnam reiciendis beatae alias amet voluptatum?</p>
+                    </div>
                 </div>
             </div>
             <button>CONTACTEZ NOUS</button><!--CTA de contact-->
         </div>
-        <div><!--Div d'une bannière de présentation de l'entreprise-->
-            <div><!--Div contenant le texte de la banière-->
-                <h1>Club auto</h1>
-                <h2>Vente et location</h2>
+        <div class="banniereVenteEtLocaCtr"><!--Div d'une bannière de présentation de l'entreprise-->
+            <div class="achatFrame bgJaune"><!--Div contenant le texte de la banière-->
+                <div>
+                    <h1>Club auto</h1>
+                    <h2>Vente et location</h2>
+                </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatum id in modi iste aspernatur,
-                    rem laudantium nam maxime, voluptates voluptas! Voluptatibus soluta nostrum debitis assumenda error.
-                    Quaerat, rem iure.</p>
+                    rem laudantium nam maxime, voluptates voluptas! Voluptatibus soluta nostrum</p>
             </div>
         </div>
     </section>
     <footer>
-        <div><!--Div infos du footer-->
-            <div>
-                <h1>CLUB<span>AUTO</span></h1>
+        <div class="col-9"><!--Div infos du footer-->
+            <div class="footerInfo presentation">
+                <h1>CLUB <span>AUTO</span></h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis accusamus tenetur
                     perspiciatis impedit facilis vero culpa hic corporis soluta.</p>
             </div>
-            <div>
+            <div class="footerInfo footerHoraire"> 
                 <h1>horaire d'ouverture</h1><!--encadré des horaires-->
-                <p>Lundi - Samedi :<span>9:00 - 17:00</span></p>
-                <p>Dimanche et jours fériés :<span>Fermé</span></p>
+                <div>
+                    <p><span>Lundi - Samedi : </span>9:00 - 17:00</p>
+                    <p><span>Dimanche et jours fériés : </span>Fermé</p>
+                </div>
             </div>
-            <div><!--div contenant l'input et le texte de la newsletter-->
+            <div class="footerInfo newsletter"><!--div contenant l'input et le texte de la newsletter-->
                 <h1>newsletter</h1>
                 <div><!--input email newsletter-->
-                    <input type="email">
+                    <input type="email" placeholder="Entrez votre email">
                     <button><i class="fa-solid fa-rss" style="color: #ffffff;"></i></button>
                 </div>
                 <p>Inscrivez-vous pour recevoir les dernières offres</p>
             </div>
-            <div><!--div titre + links-->
+            <div class="footerInfo footerSocial"><!--div titre + links-->
                 <h1>reseaux sociaux</h1>
-                <div><!--div Ctr social media links-->
-                    <ul><!--liste des liens social media-->
-                        <li><a href=""><i class="fa-brands fa-square-facebook" style="color: #000000;"></i></a></li>
-                        <li><a href=""></a><i class="fa-brands fa-square-twitter" style="color: #000000;"></i></a></li>
-                        <li><a href=""></a><i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a>
-                        </li>
-                        <li><a href=""></a><i class="fa-brands fa-square-google-plus" style="color: #000000;"></i></a>
-                        </li>
-                        <li><a href=""></a><i class="fa-brands fa-square-youtube" style="color: #000000;"></i></a></li>
-                    </ul>
+                <!--div Ctr social media links-->
+                <!--liste des liens social media-->
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus-g" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
                 </div>
             </div>
         </div>
-        <div><!--div copyright etc..-->
+        <div class="copyright col-9"><!--div copyright etc..-->
             <p>Copyright &#169 Club Auto - Tous droits réservés</p>
         </div>
     </footer>
