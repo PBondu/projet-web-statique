@@ -567,7 +567,7 @@ footer > div > div{/*div de chaque info*/
     height: 600px;
     background-image: url('../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule3.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 50%;
+    background-size: cover;
 
 }
 
