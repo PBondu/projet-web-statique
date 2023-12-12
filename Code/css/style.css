@@ -557,6 +557,125 @@ footer > div > div{/*div de chaque info*/
     color: #CCC;
 }
 
+/*STYLE DE LA PAGE CONTACT.HTML*/
+
+.contactSection{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-image: url('../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+
+}
+
+.formBg{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    z-index: 100;
+    box-shadow: 3px 3px 7px 2px #888;
+}
+
+.formCtr{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.formCtr h1{
+    font-size: 2.5em;
+}
+
+.formInfo{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    height: 90%;
+}
+
+.formInfo label{
+    font-family: 'Montserrat' !important;
+    color: #AAA;
+}
+
+.prenomMail, .nomTel, .formMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 180px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.formLine{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.prenomMail input, .nomTel input, .formMessage > textarea{
+    font-family: 'Montserrat' !important;
+    height: 40px;
+    width: 100%;
+    color: #999;
+    padding-left: 15px;
+    background-color: var(--grey);
+    outline-style: none;
+    border: none;
+    resize: none;
+}
+
+.formMessage{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.formMessage > textarea{
+    height: 135px !important;
+    width: 120% !important;
+}
+
+.formMessage > button{
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    height: 40px;
+    width: 150px;
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Montserrat' !important;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 img{
     width: 100%; /*définit une taille d'image de base*/
 }
