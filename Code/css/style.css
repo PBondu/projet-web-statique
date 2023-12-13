@@ -122,7 +122,7 @@ header{
     padding:  5px 9px; 
 }
 
-nav{
+.sourceNav{
     /*display: none;*/  /*cache la barre de navigation pour la vue mobile*/
     width: 100%;
     position: absolute;
@@ -134,7 +134,7 @@ nav{
     z-index: 500;
 }
 
-nav ul{ 
+.sourceNav ul{ 
     width: 100%;
     padding: 0;
     margin-right: 12%;
@@ -143,13 +143,13 @@ nav ul{
     justify-content: end;
 }
 
-nav li{ /*Définit la dimensions des liens barres nav*/
+.sourceNav li{ /*Définit la dimensions des liens barres nav*/
     width: 7em;
     height: 50px;
     list-style-type: none;
 }
 
-nav a{ /*Définit le style et l'alignement des liens de la barre de navigation*/
+.sourceNav a{ /*Définit le style et l'alignement des liens de la barre de navigation*/
     width: 100%;
     height: 100%;
     display: flex;
@@ -164,7 +164,7 @@ nav a{ /*Définit le style et l'alignement des liens de la barre de navigation*/
     font-size: 0.85em;
 }
 
-nav a:hover{/*Hover des links*/
+.sourceNav a:hover{/*Hover des links*/
     background-color: var(--brown);
     color: var(--white);
 }
@@ -660,20 +660,138 @@ footer > div > div{/*div de chaque info*/
 }
 
 
+/*STYLE DE LA PAGE VEHICULEDETAILS.HTML*/
+
+/*Rrefonte de la barre de navigation pour quitter l'opacité et la position absolute
+ des pages accueil et contact*/
+
+.navVehicule{
+    /*display: none;*/  /*cache la barre de navigation pour la vue mobile*/
+    width: 100%; 
+    display: flex;
+    justify-content: end;
+    background-color:var(--grey);
+}
+.navVehicule ul{ 
+    width: 100%;
+    padding: 0;
+    margin-right: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.navVehicule li{ /*Définit la dimensions des liens barres nav*/
+    width: 7em;
+    height: 50px;
+    list-style-type: none;
+}
+.navVehicule a{ /*Définit le style et l'alignement des liens de la barre de navigation*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--black);
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 0.85em;
+}
+.navVehicule a:hover{/*Hover des links*/
+    background-color: var(--brown);
+    color: var(--white);
+}
 
 
 
+.vehiculeSection{/*contenaire des infos*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20%;
+}
 
+.vehiculeSection > p{/*Style du chemin affiché en dessous de la barre de navigation*/
+    color: #999;
+    height: 50px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.vehiculeSectionTitle{/*Style du H1 qui est la marque et le modèle du véhicule*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;
+}
 
+/*barre de lien description technique etc ...*/
+.vehiculeSectionNav{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    height: 50px;
+    margin: 30px 0;
+}
+.vehiculeSectionNav a{
+    text-align: center;
+    color: var(--white);
+    text-decoration: none;
+    height: 100%;
+    width: 18%;
+    font-family: 'Montserrat' !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.vehiculeSectionNav a:hover, .vehiculeSectionNav a:active{
+    background-color: var(--white);
+    border-top: solid 5px var(--orange);
+    color: var(--black);
+    height: 120%;
+    padding-bottom: 5px;
+}
 
+/*style de la description*/
+.vehiculeSectionText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 400px;
+    margin-bottom: 20px;
+}
+.vehiculeSectionText h2{
+    font-size: 0.9em;
+    color: #666;
+}
+.vehiculeSectionText p{
+    font-size: 1.1em;
+}
+.vehiculeSectionText em{
+    font-size: 1.2em;
+    border-left: solid 5px var(--orange);
+    padding-left: 20px;
+    color: #666;
+}
 
-
-
-
-
-
-
-
+/*Style de la liste OPTIONS*/
+.vehiculeSectionOptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    margin-bottom: 50px !important;
+}
+.vehiculeSectionOptions ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2%;
+    height: 120px;
+    list-style-image: url('/Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/circle-check-solid.svg');
+}
 
 
 img{
