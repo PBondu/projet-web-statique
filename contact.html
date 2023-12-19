@@ -3,13 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    </meta>
     <title>CLUB AUTO</title>
     <link rel="stylesheet" href="/styles/style.css">
     <!--Début import des polices google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@500&display=swap"
         rel="stylesheet">
     <!--Fin import des polices google-->
     <!--script permettant l'import d'icone via le site Fontawesome-->
@@ -65,35 +64,35 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
-    <section class="contactSection">
+    <section class="contactSection"><!--début du formulaire de contact-->
         <div class="formBg">
             <div class="formCtr">
-                <h2>Contactez-nous</h2>
+                <h2>Contactez-nous</h2><!--titre du formulaire-->
                 <div class="formInfo">
-                    <div class="prenomMail">
-                        <div class="formLine">
-                            <label for="nom">Prénom*</label>
-                            <input type="text" name="prenom" placeholder="Entrez votre prénom" required>
+                    <div class="prenomMail"><!--permet la disposition des champs de saisie-->
+                        <div class="formLine"><!--permet la mise en forme du label et du champ de saisie-->
+                            <label for="prenom">Prénom*</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
                         </div>
-                        <div class="formLine">
-                            <label for="nom">Email*</label>
-                            <input type="mail" name="email" placeholder="Entrez une adresse mail valide" required>
+                        <div class="formLine"><!--permet la mise en forme du label et du champ de saisie-->
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez une adresse mail valide" required>
                         </div>
                     </div>
-                    <div class="nomTel">
-                        <div class="formLine">
+                    <div class="nomTel"><!--permet la disposition des champs de saisie-->
+                        <div class="formLine"><!--permet la mise en forme du label et du champ de saisie-->
                             <label for="nom">Nom*</label>
-                            <input type="text" name="nom" placeholder="Entrez votre nom" required>
+                            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
                         </div>
-                        <div class="formLine">
+                        <div class="formLine"><!--permet la mise en forme du label et du champ de saisie-->
                             <label for="nom">Téléphone</label>
                             <input type="tel" name="telephone" placeholder="Phone number">
                         </div>
                     </div>
-                    <div class="formMessage">
+                    <div class="formMessage"><!--permet l'alignement du titre, champ et button-->
                         <label for="message">Message</label>
-                        <textarea name="message" cols="30" rows="5" placeholder="Ecrivez votre message"></textarea>
-                        <input type="submit" class="submit"></input>
+                        <textarea id="message" name="message" cols="30" rows="5" placeholder="Ecrivez votre message"></textarea>
+                        <input type="submit" value="Envoyer" class="submit">
                     </div>
                 </div>
             </div>

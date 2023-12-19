@@ -18,10 +18,10 @@
 
 h1, h2, h3, h1 span, h2 span{/*définit la police et la capitalisation des titres*/
     text-transform: uppercase;
-    font-family: 'montserrat' !important; /*Police de titre*/
+    font-family: 'montserrat'; /*Police de titre*/
 }
 
-header{
+header{/*contenaire principal du header*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -223,8 +223,8 @@ header{
     font-size: 0.85em;
 }
 
-.articleText p, .articleText li{
-    color: var(--darkGrey);
+.articleText p, .articleText li{ /*stylise le textes en dessous du titre LE MEILLEUR DE L'AUTOMOBILE*/
+    color: #444;
     font-size: 1.05em;
 }
 
@@ -241,7 +241,7 @@ header{
     align-items: center;
 }
 
-.frameCtr{
+.frameCtr{ /*contient les deux encardés et les aligne horizontalement*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -249,7 +249,7 @@ header{
     height: 600px;
 }
 
-.achatFrame{
+.achatFrame{/*défini les dimensions des deux encadrés*/
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -259,13 +259,13 @@ header{
     height: 230px;
 }
 
-.achatFrame h2{
-    font-size: 1.3em;
-    text-transform: full-size-kana !important;
+.achatFrame h2{ /*Titre des ecnadrés*/
+    font-size: 1.6em;
+    text-transform: full-size-kana !important;/*permet d'annuler l'uppercase en mettant une majuscule à la première lettre uniquement*/
     font-family: 'montserrat' !important;
 }
 
-.achatFrame p{
+.achatFrame p{/*texte en blanc des encadrés*/
     font-size: 1em;
     color: var(--white);
 }
@@ -280,7 +280,7 @@ header{
     opacity: 0.85;
 }
 
-.vehiculeRecentCtr{
+.vehiculeRecentCtr{/*contient le bloc des vehicules recents*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +289,7 @@ header{
     background-color:  var(--black);
 }
 
-.vehiculeRecentTitle{
+.vehiculeRecentTitle{/*Titre et ligne orange au dessous*/
     width: 100%;
     height: 60px;
     text-align: center;
@@ -298,13 +298,13 @@ header{
     border-bottom: solid 3px var(--brown);
 }
 
-.vehiculeRecentCtr ul{
+.vehiculeRecentCtr ul{/*dispose les images du diapo*/
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
 
-.vehiculeRecentCtr a{
+.vehiculeRecentCtr a{/*aligne l'img et le bloc du texte*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -313,7 +313,7 @@ header{
     text-decoration: none;
 }
 
-.vehiculeRecentCtr a div{
+.vehiculeRecentCtr a div{/*contient le texte le prix pour les aligner*/
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -322,20 +322,19 @@ header{
     height: 100px;
 }
 
-.vehiculeRecentCtr a div h3{
+.vehiculeRecentCtr a div h3{/*dimensionne le titre contenant la marque et modèle*/
     display: flex;
     align-items: center;
     width: 50%;
-    color: var(--white);
-    font-size: 1.6em;
 }
 
-.vehiculeRecentCtr strong{
+.vehiculeRecentCtr strong{/*style de la marque et du modèle du vehicule*/
     font-family: 'Montserrat' !important;
-    font-size: 0.65em;
+    font-size: 0.9em;
+    color: var(--white);
 }
 
-.vehiculeRecentCtr a div p{    
+.vehiculeRecentCtr a div p{/*style du prix*/     
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,12 +347,12 @@ header{
     font-family: 'Montserrat' !important;
 }
 
-.vehiculeRecentCtr a div p span{
+.vehiculeRecentCtr a div p span{/*prix barré*/
     color: var(--black);
     text-decoration: line-through;
 }
 
-.underlineVehicule{
+.underlineVehicule{/*style de la barre du dessous*/
     width: 90%;
     position: absolute;
     border-bottom: solid 1px #666;
@@ -457,7 +456,7 @@ footer > div > div{/*div de chaque info*/
     width: 20%;
 }
 
-.footerInfo{
+.footerInfo{ /*contenaire du footer et aligne les infos et le copyright*/
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -469,11 +468,11 @@ footer > div > div{/*div de chaque info*/
     padding-bottom: 15px;
 }
 
-.presentation span{
+.presentation span{/*style le AUTO en blanc*/
     color: var(--white);
 }
 
-.presentation h2{
+.presentation h2{/*Style le CLUB en bleu*/
     font-size: 1.2em;
     color: var(--blue);
 }
@@ -499,18 +498,20 @@ footer > div > div{/*div de chaque info*/
     font-size: 1.15em;
 }
 
-.newsletter input{
+.newsletter input{ /*style de la barre d'input de la newsletter*/
     width: 200px;
     height: 35px;
     border-radius: 0;
     border: none;
-    font-size: 1em;
+    font-size: 0.9em;
     padding-left: 10px;
     color: var(--darkGrey);
-    outline: none
+    outline: none;
+    font-family: 'Montserrat' !important;
+    font-weight: 500;
 }
 
-.newsletter button{
+.newsletter button{ /*Style du bouton newsletter*/
     border: none;
     background-color: var(--brown);
     border-radius: 0;
@@ -518,7 +519,7 @@ footer > div > div{/*div de chaque info*/
     height: 35px;
 }
 
-.newsletter > div{
+.newsletter > div{/*aligne la barre et le bouton*/
     display: flex;
     justify-content: baseline;
     padding-bottom: 10px;
@@ -537,7 +538,7 @@ footer > div > div{/*div de chaque info*/
     text-decoration: none;
 }
 
-.footerSocial > div{
+.footerSocial > div{/*aligne les boutons de social media*/
     display: flex;
     flex-direction: row;
     justify-content: baseline;
@@ -546,14 +547,14 @@ footer > div > div{/*div de chaque info*/
     padding: 0;
 }
 
-.footerSocialButton{
+.footerSocialButton{/*style du bouton social media*/
     display: flex !important;/*important force le flex car le display inline block et mis par défaut par font awesome*/
     align-items: center;
     justify-content: center;
     border-radius: 0;
     height: 50px;
     width: 50px;
-    font-size: 25px;
+    font-size: 22px;
     margin-right: 15px;
     border: 1px solid transparent;
     background-color: var(--darkGrey);
@@ -570,7 +571,7 @@ footer > div > div{/*div de chaque info*/
 
 /*STYLE DE LA PAGE CONTACT.HTML*/
 
-.contactSection{
+.contactSection{/*container de la section complète, bg et formulaire de contact inclus*/
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -582,7 +583,7 @@ footer > div > div{/*div de chaque info*/
 
 }
 
-.formBg{
+.formBg{/*container du formulaire avec son bg blanc*/
     height: 70%;
     width: 70%;
     display: flex;
@@ -593,7 +594,7 @@ footer > div > div{/*div de chaque info*/
     box-shadow: 3px 3px 7px 2px #888;
 }
 
-.formCtr{
+.formCtr{/*container des infos du formulaire, titre compris*/
     width: 80%;
     height: 60%;
     display: flex;
@@ -605,7 +606,7 @@ footer > div > div{/*div de chaque info*/
     font-size: 2.5em;
 }
 
-.formInfo{
+.formInfo{ /*container des champs de saisie*/
     display: flex;
     justify-content: baseline;
     align-items: center;
@@ -617,7 +618,7 @@ footer > div > div{/*div de chaque info*/
     color: #AAA;
 }
 
-.prenomMail, .nomTel, .formMessage{
+.prenomMail, .nomTel, .formMessage{ /*permet d'aligner les différents champs verticalement*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -626,14 +627,14 @@ footer > div > div{/*div de chaque info*/
     margin-right: 50px;
 }
 
-.formLine{
+.formLine{ /*permet la mise en forme du label et du champ de saisie*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 70px;
 }
 
-.prenomMail input, .nomTel input, .formMessage > textarea{
+.prenomMail input, .nomTel input, .formMessage > textarea{ /*style le champs de saisie*/
     font-family: 'Montserrat' !important;
     height: 40px;
     width: 100%;
@@ -645,18 +646,19 @@ footer > div > div{/*div de chaque info*/
     resize: none;
 }
 
-.formMessage{
+.formMessage{/*aligne le textarea titre et submit*/ 
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
 .formMessage > textarea{
+    padding-top: 10px;
     height: 135px !important;
     width: 120% !important;
 }
 
-.formMessage > .submit{
+.formMessage > .submit{ /*style le bouton submit*/
     position: absolute;
     left: 0;
     bottom: -50px;
@@ -668,6 +670,10 @@ footer > div > div{/*div de chaque info*/
     border-radius: 5px;
     font-family: 'Montserrat' !important;
     border: none;
+    cursor: pointer;
+}
+.formMessage > .submit:active{
+background-color: #547bb9;
 }
 
 
@@ -716,7 +722,6 @@ footer > div > div{/*div de chaque info*/
 }
 
 
-
 .vehiculeSection{/*contenaire des infos*/
     display: flex;
     flex-direction: column;
@@ -729,6 +734,8 @@ footer > div > div{/*div de chaque info*/
     height: 50px;
     text-transform: uppercase;
     margin-top: 10px;
+    font-family: 'Montserrat' !important;
+    font-weight: 500;
 }
 .vehiculeSectionTitle{/*Style du H1 qui est la marque et le modèle du véhicule*/
     display: flex;
@@ -745,7 +752,7 @@ footer > div > div{/*div de chaque info*/
     height: 50px;
     margin: 30px 0;
 }
-.vehiculeSectionNav a{
+.vehiculeSectionNav a{ /*style les liens*/
     text-align: center;
     color: var(--white);
     text-decoration: none;
@@ -757,7 +764,7 @@ footer > div > div{/*div de chaque info*/
     justify-content: center;
     margin-left: 10px;
 }
-.vehiculeSectionNav a:hover, .vehiculeSectionNav a:active{
+.vehiculeSectionNav a:hover{/*style le survol de la barre d'info du vehicule*/
     background-color: var(--white);
     border-top: solid 5px var(--orange);
     color: var(--black);
