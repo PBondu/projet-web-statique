@@ -16,7 +16,7 @@
     margin: 0;
 }
 
-h1, h2, h1 span{/*définit la police et la capitalisation des titres*/
+h1, h2, h3, h1 span, h2 span{/*définit la police et la capitalisation des titres*/
     text-transform: uppercase;
     font-family: 'montserrat' !important; /*Police de titre*/
 }
@@ -219,7 +219,7 @@ header{
     width: 48%; /*taille réglée pour laisser un gap*/
 }
 
-.articleText h2{
+.articleText h3{
     font-size: 0.85em;
 }
 
@@ -322,11 +322,12 @@ header{
     height: 100px;
 }
 
-.vehiculeRecentCtr a div h1{
+.vehiculeRecentCtr a div h3{
     display: flex;
     align-items: center;
     width: 50%;
     color: var(--white);
+    font-size: 1.6em;
 }
 
 .vehiculeRecentCtr strong{
@@ -334,7 +335,7 @@ header{
     font-size: 0.65em;
 }
 
-.vehiculeRecentCtr a div h2{    
+.vehiculeRecentCtr a div p{    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,9 +345,10 @@ header{
     background-color: var(--blue);
     height: 40px;
     width: 85px;
+    font-family: 'Montserrat' !important;
 }
 
-.vehiculeRecentCtr a div h2 span{
+.vehiculeRecentCtr a div p span{
     color: var(--black);
     text-decoration: line-through;
 }
@@ -389,7 +391,7 @@ header{
     width: 70%;
 }
 
-.qualiteUnique h2{/*Style du titre de la qualité*/
+.qualiteUnique h3{/*Style du titre de la qualité*/
     font-size: 1.2em;
     margin-bottom: 15px;
 }
@@ -420,11 +422,12 @@ header{
     margin-left: 20%;
 }
 
-.banniereVenteEtLocaCtr h1{/*taille du titre en noir*/
+.banniereVenteEtLocaCtr h2{/*taille du titre en noir*/
     font-size: 1.8em;
+    text-transform: uppercase !important;
 }
 
-.banniereVenteEtLocaCtr h2{/*taille du titre en blanc*/
+.banniereVenteEtLocaCtr h3{/*taille du titre en blanc*/
     color: var(--white);
     text-transform: uppercase !important;
     font-size: 1.8em;
@@ -462,7 +465,7 @@ footer > div > div{/*div de chaque info*/
     height: 150px;
 }
 
-.footerInfo h1{
+.footerInfo h2{
     padding-bottom: 15px;
 }
 
@@ -470,7 +473,7 @@ footer > div > div{/*div de chaque info*/
     color: var(--white);
 }
 
-.presentation h1{
+.presentation h2{
     font-size: 1.2em;
     color: var(--blue);
 }
@@ -488,11 +491,11 @@ footer > div > div{/*div de chaque info*/
     color: #CCC;
 }
 
-.footerHoraire h1{
+.footerHoraire h2{
     font-size: 0.95em !important;
 }
 
-.newsletter h1{
+.newsletter h2{
     font-size: 1.15em;
 }
 
@@ -526,7 +529,7 @@ footer > div > div{/*div de chaque info*/
     width: 70%;
 }
 
-.footerSocial > h1{
+.footerSocial > h2{
     font-size: 1.15em;
 }
 
@@ -598,7 +601,7 @@ footer > div > div{/*div de chaque info*/
     justify-content: baseline;
 }
 
-.formCtr h1{
+.formCtr h2{
     font-size: 2.5em;
 }
 
