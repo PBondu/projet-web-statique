@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CLUB AUTO</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--Début import des polices google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <!--Fin import des polices google-->
+    <!--script permettant l'import d'icone via le site Fontawesome-->
+    <script src="https://kit.fontawesome.com/4907765125.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerCtr col-9">
+            <h1 class="col-3">Club auto</h1> <!--Titre du header-->
+            <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
+            <div class="headerLogo col-3">
+                <img src="/images/icone-adresse.png" alt="icone de l'adresse">
+                <div class="headerAdresse">
+                    <h2 class="texteOrange headerFontSize">Adresse :</h2> <!--Adresse Header-->
+                    <p>Avenue charles de gaulle 75000 paris</p>
+                </div>
+            </div>
+            <div class="headerLogo col-3">
+                <img src="/images/icon-telephone.png" alt="icone du téléphone">
+                <div class="headerTel">
+                    <h2 class="texteOrange headerFontSize">Téléphone :</h2><!--Téléphone Header-->
+                    <p>01 23 45 67 89</p>
+                </div>
+            </div>  
+            <div class="horaireEtOuvertureCtr col-3"><!--Permet au css d'aligner correctement le texte-->
+                <div class="horaireCtr">
+                <h2 class="texteOrange headerFontSize">Ouverture :</h2> <!--Horaire Header-->
+                <p>Du lundi au samedi</p>
+                </div>
+                <div class="horaireCtr">
+                <h2 class="texteOrange headerFontSize">Horaires :</h2>
+                <p>De 9h à 17h</p>
+                </div>
+            </div>
+            <div class="socialMediaCtr col-1"><!--Div pour le style contenant les liens réseaux sociaux-->
+                <a href="">
+                    <!--import du logo facebook-->
+                    <i class="fa-brands fa-facebook-f headerSocial-f" style="color: #ffffff;"></i>
+                </a>
+                <a href="">
+                    <!--import du logo twitter-->
+                    <i class="fa-brands fa-twitter headerSocial-t" style="color: #ffffff;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="sourceNav"><!--barre de navigation-->
+        <ul><!--liste de liens de navigation-->
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="vehiculeDetails.html">vente</a></li>
+            <li><a href="vehiculeDetails.html">location</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <section><!--Bannière de haut de page avec une image et un titre-->
+            <div id="banniereDesktop">
+                <img 
+                    src="/images/vehicule1.jpg" alt="Voitures de présentées les unes dérrière les autres">
+                <div class="sectionTitle">
+                    <h1 class="col-9">Club auto <span class="texteOrange">Le meilleur de l'automobile</span></h1><!--titre en dessous de la banière photo-->
+                </div>  
+            </div>
+        <article class="articleMainCtr">
+            <div class="articleMain col-7"><!--Div contenenant l'article de présentation n°1-->
+                    <div class="articleImg"><!--image située à gauche de la présentation-->
+                        <img src="/images/clients.jpg" alt="image de clients satisfaits">
+                    </div>
+                <div class="articleText">
+                    <h1>Bienvenue chez <span class="texteOrange">Club auto</span></h1><!--titre et texte pour la présentation n°1-->
+                    <br>
+                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum adipisci architecto labore! Dolor
+                        quidem
+                    </h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sed voluptates rem quod, numquam reiciendis nulla a neque inventore impedit id dolor repellat accusamus vel debitis, fugit temporibus veritatis, repudiandae voluptatum expedita eum? Iste optio ipsam fugit ullam dolor voluptatem repellendus veritatis, eos soluta harum amet, laudantium dolorem expedita minima possimus error ut, nisi facere! Libero placeat sint officia eligendi?</p>
+                </div>
+            </div>
+            <div class="articleMain col-7"><!--Div contenenant l'article de présentation n°2-->
+                <div class="articleText">
+                    <h1 class="underline">Le meilleur de l'automobile</h1><!--titre et texte pour la présentation n°2-->
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium quidem iure nobis debitis eius
+                        incidunt
+                        repellat iste minima, exercitationem velit vel error veniam impedit dolore nulla fugit alias quo
+                        temporibus?
+                        Libero quasi, eius veniam in magnam itaque laudantium porro saepe dolorem laborum amet ut nam ab
+                        aliquid?
+                        Impedit,
+                        et.
+                    </p>
+                    <br>
+                    <ul><!--liste des points forts de l'entreprise-->
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+                <div class="articleImg"><!--image située à droite de la présentation n°2-->
+                    <img src="/images/entretien.jpg" alt="image d'un mécanicien travaillant">
+                </div>
+            </div>
+        </article> 
+        <div class="frameCtrBg"><!--Div contenant un bouton pour la page de vente et un pour la page de location-->
+            <div class="frameCtr col-8">
+                <div class="achatFrame bgJaune"><!--bouton de loca-->
+                    <h2>Vous souhaitez louer ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate, aliquam aliquid eius suscipit
+                        optio
+                        impedit delectus distinctio a inventore numquam qui architecto enim quaerat ex voluptatum officiis
+                        repellendus
+                        ipsa voluptates laudantium dolores vitae sapiente.
+                    </p>
+                </div>
+                <div class="achatFrame bgRouge"><!--bouton d'achat-->
+                    <h2>Vous souhaitez acheter ?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cupiditate, aliquam aliquid eius suscipit
+                        optio
+                        impedit delectus distinctio a inventore numquam qui architecto enim quaerat ex voluptatum officiis
+                        repellendus
+                        ipsa voluptates laudantium dolores vitae sapiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="vehiculeRecentCtr"><!--Div vehicules recents, bannière défilante avec les vehcules disponibles-->
+            <h1 class="vehiculeRecentTitle col-9">Vehicules recents</h1><!--titre de la section-->
+                <ul class="col-9">
+                    <li>
+                        <a href=""><!--ancre contenant l'annonce du véhicule avec son prix et sa description-->
+                            <img
+                                src="/images/vehicule2.jpg" alt="Belle voiture devant un paysage">
+                            <div>
+                                <h1><strong>BMW 535I, NAVI, LEATHER, ABS</strong></h1><!--marque et modèle du véhicule-->
+                                <h2>5 500 €</h2><!--prix du véhicule-->
+                                <span class="underlineVehicule"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><!--ancre contenant l'annonce du véhicule avec son prix et sa description-->
+                            <img
+                                src="/images/vehicule2.jpg" alt="Belle voiture devant un paysage">
+                            <div>
+                                <h1><strong>BMW 328I, SPORT LINE BODY KIT</strong></h1><!--marque et modèle du véhicule-->
+                                <h2>8 000 €</h2><!--prix du véhicule-->
+                                <span class="underlineVehicule"></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><!--ancre contenant l'annonce du véhicule avec son prix et sa description-->
+                            <img
+                                src="/images/vehicule2.jpg" alt="Belle voiture devant un paysage">
+                            <div>
+                                <h1><strong>FORD EXPLORER 2015 4WD</strong></h1><!--marque et modèle du véhicule-->
+                                <h2><span>9 000 €<!--prix barré--></span>8 200 €</h2><!--prix du véhicule-->
+                                <span class="underlineVehicule"></span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+        </div>
+        <div class="nosQualiteCtr"><!--Div contenant les différentes qualités de l'entreprise-->
+            <h1>Pourquoi nous choisir ?</h1>
+            <div class="lesQuatresQualitesCtr col-11"><!--div contenant les quatres div correspondantes à chaque qualité de l'entreprise-->
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
+                    <img src="/images/icon1.png" alt="icone représentant une qualité se l'entreprise">
+                    <div>
+                        <h2>Financement</h2><!--énoncé de la qualité-->
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut numquam eum sit quia, eveniet
+                        excepturi voluptates dolores porro voluptatem quaerat.</p>
+                    </div>
+                </div>
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
+                    <img src="/images/icon2.png" alt="icone représentant une qualité se l'entreprise">
+                    <div>
+                        <h2>Réactivité de l'équipe technique</h2><!--énoncé de la qualité-->
+                        <p>Nihil laboriosam eligendi, odit, fugiat quae doloremque excepturi hic placeat nisi temporibus
+                        maxime aspernatur! Nam nulla dicta odio id itaque.</p>
+                    </div>
+                </div>
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
+                    <img src="/images/icon3.png" alt="icone représentant une qualité se l'entreprise">
+                    <div>
+                        <h2>A l'écoute de notre clientèle</h2><!--énoncé de la qualité-->
+                        <p>Assumenda veniam minus ex ullam? Recusandae tempore nihil doloribus at amet, ea earum qui eos
+                        ullam, est pariatur sint harum?</p>
+                    </div>
+                </div>
+                <div class="qualiteUnique"><!--div contenant le logo et le texte-->
+                    <img src="/images/icon4.png" alt="icone représentant une qualité se l'entreprise">
+                    <div>
+                        <h2>Service & maintenance</h2><!--énoncé de la qualité-->
+                        <p>Quo aspernatur non nemo quidem voluptate praesentium velit atque eum, error asperiores nesciunt
+                        provident magnam reiciendis beatae alias amet voluptatum?</p>
+                    </div>
+                </div>
+            </div>
+            <button>CONTACTEZ NOUS</button><!--CTA de contact-->
+        </div>
+        <div class="banniereVenteEtLocaCtr"><!--Div d'une bannière de présentation de l'entreprise-->
+            <div class="achatFrame bgJaune"><!--Div contenant le texte de la banière-->
+                <div>
+                    <h1>Club auto</h1>
+                    <h2>Vente et location</h2>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatum id in modi iste aspernatur,
+                    rem laudantium nam maxime, voluptates voluptas! Voluptatibus soluta nostrum</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="col-9"><!--Div infos du footer-->
+            <div class="footerInfo presentation">
+                <h1>CLUB <span>AUTO</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis accusamus tenetur
+                    perspiciatis impedit facilis vero culpa hic corporis soluta.</p>
+            </div>
+            <div class="footerInfo footerHoraire"> 
+                <h1>horaire d'ouverture</h1><!--encadré des horaires-->
+                <div>
+                    <p><span>Lundi - Samedi : </span>9:00 - 17:00</p>
+                    <p><span>Dimanche et jours fériés : </span>Fermé</p>
+                </div>
+            </div>
+            <div class="footerInfo newsletter"><!--div contenant l'input et le texte de la newsletter-->
+                <h1>newsletter</h1>
+                <div><!--input email newsletter-->
+                    <input type="email" placeholder="Entrez votre email">
+                    <button><i class="fa-solid fa-rss" style="color: #ffffff;"></i></button>
+                </div>
+                <p>Inscrivez-vous pour recevoir les dernières offres</p>
+            </div>
+            <div class="footerInfo footerSocial"><!--div titre + links-->
+                <h1>reseaux sociaux</h1>
+                <!--div Ctr social media links-->
+                <!--liste des liens social media-->
+                <div>
+                    <a href=""><i class="fa-brands footerSocialButton fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-google-plus-g" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-youtube" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright col-9"><!--div copyright etc..-->
+            <p>Copyright &#169; Club Auto - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>

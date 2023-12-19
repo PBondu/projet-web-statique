@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>CLUB AUTO</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <!--Début import des polices google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <!--Fin import des polices google-->
+    <!--script permettant l'import d'icone via le site Fontawesome-->
+    <script src="https://kit.fontawesome.com/4907765125.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerCtr col-9">
+            <h1 class="col-3">Club auto</h1> <!--Titre du header-->
+            <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
+            <div class="headerLogo col-3">
+                <img src="/images/icone-adresse.png" alt="icone de l'adresse">
+                <div class="headerAdresse">
+                    <h2 class="texteOrange headerFontSize">Adresse :</h2> <!--Adresse Header-->
+                    <p>Avenue charles de gaulle 75000 paris</p>
+                </div>
+            </div>
+            <div class="headerLogo col-3">
+                <img src="/images/icon-telephone.png" alt="icone du téléphone">
+                <div class="headerTel">
+                    <h2 class="texteOrange headerFontSize">Téléphone :</h2><!--Téléphone Header-->
+                    <p>01 23 45 67 89</p>
+                </div>
+            </div>  
+            <div class="horaireEtOuvertureCtr col-3"><!--Permet au css d'aligner correctement le texte-->
+                <div class="horaireCtr">
+                <h2 class="texteOrange headerFontSize">Ouverture :</h2> <!--Horaire Header-->
+                <p>Du lundi au samedi</p>
+                </div>
+                <div class="horaireCtr">
+                <h2 class="texteOrange headerFontSize">Horaires :</h2>
+                <p>De 9h à 17h</p>
+                </div>
+            </div>
+            <div class="socialMediaCtr col-1"><!--Div pour le style contenant les liens réseaux sociaux-->
+                <a href="">
+                    <!--import du logo facebook-->
+                    <i class="fa-brands fa-facebook-f headerSocial-f" style="color: #ffffff;"></i>
+                </a>
+                <a href="">
+                    <!--import du logo twitter-->
+                    <i class="fa-brands fa-twitter headerSocial-t" style="color: #ffffff;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navVehicule"><!--barre de navigation-->
+        <ul><!--liste de liens de navigation-->
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="vehiculeDetails.html">vente</a></li>
+            <li><a href="vehiculeDetails.html">location</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </nav>
+    <section class="col-7"><!--Bannière de haut de page avec une image et un titre-->
+        <div class="vehiculeSection">
+            <p>ACCUEIL / VENTE / Bmw 535i, Navi, Leather, ABS</p>
+            <div class="vehiculeSectionTitle">
+                <h1>Bmw 535i, Navi, Leather, ABS</h1>
+                <img src="/images/vehicule2.jpg" alt="Belle voiture présentée devant un paysage">
+            </div>
+            <div class="vehiculeSectionNav">
+                <a href="">DESCRIPTION</a>
+                <a href="">TECHNIQUE</a>
+                <a href="">OPTIONS</a>
+                <a href="">CONTACT</a>
+            </div>
+            <div class="vehiculeSectionText">
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda labore id repellendus, blanditiis tenetur vel delectus repudiandae quibusdam minus totam.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae temporibus perferendis quibusdam natus omnis repellat quod necessitatibus vero, fugiat reprehenderit dignissimos, velit, possimus aperiam! Obcaecati provident vitae libero dolor laudantium omnis harum hic, numquam fugit nobis maiores eos at praesentium aliquid doloremque quaerat sapiente molestias porro sit. Dicta commodi consequatur nulla optio libero placeat a esse dolorem, consectetur perferendis, dolore saepe, mollitia cumque numquam illum distinctio veniam ea cum vero eaque. Cumque saepe explicabo architecto totam? Cupiditate nobis libero ipsa in ipsum, alias doloremque. Laudantium debitis, reiciendis libero ratione sapiente quis, totam, inventore id accusantium autem quia assumenda quae perferendis.</p>
+                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa consequuntur nihil, perferendis possimus minima aliquam?</em>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur provident dolorum quae eius corporis, maxime dignissimos veniam rerum placeat repellat corrupti nihil quibusdam, molestiae neque distinctio voluptatem eos ut, laudantium molestias? Nemo quos maiores optio illum necessitatibus et iure non!</p>
+            </div>
+            <div class="vehiculeSectionOptions">
+                <h2>OPTIONS</h2>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="col-9"><!--Div infos du footer-->
+            <div class="footerInfo presentation">
+                <h1>CLUB <span>AUTO</span></h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis accusamus tenetur
+                    perspiciatis impedit facilis vero culpa hic corporis soluta.</p>
+            </div>
+            <div class="footerInfo footerHoraire"> 
+                <h1>horaire d'ouverture</h1><!--encadré des horaires-->
+                <div>
+                    <p><span>Lundi - Samedi : </span>9:00 - 17:00</p>
+                    <p><span>Dimanche et jours fériés : </span>Fermé</p>
+                </div>
+            </div>
+            <div class="footerInfo newsletter"><!--div contenant l'input et le texte de la newsletter-->
+                <h1>newsletter</h1>
+                <div><!--input email newsletter-->
+                    <input type="email" placeholder="Entrez votre email">
+                    <button><i class="fa-solid fa-rss" style="color: #ffffff;"></i></button>
+                </div>
+                <p>Inscrivez-vous pour recevoir les dernières offres</p>
+            </div>
+            <div class="footerInfo footerSocial"><!--div titre + links-->
+                <h1>reseaux sociaux</h1>
+                <!--div Ctr social media links-->
+                <!--liste des liens social media-->
+                <div>
+                    <a href=""><i class="fa-brands footerSocialButton fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-google-plus-g" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-youtube" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright col-9"><!--div copyright etc..-->
+            <p>Copyright &#169; Club Auto - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+
+</html>
