@@ -76,7 +76,7 @@ header{
     justify-content: baseline;
 }
 
-.headerAdresse adress{/*Mise en forme du texte de l'adresse*/
+.headerAdresse p{/*Mise en forme du texte de l'adresse*/
     color: #AAA;
     text-transform: uppercase;
     font-family: 'montserrat' !important; /*Police de titre*/
@@ -108,18 +108,18 @@ header{
     align-items: center;
 }
 
-.headerSocial{/*Style des deux boutons social media*/
+.headerSocial-t{/*style twitter bouton*/
     border: 1px solid transparent;
     border-radius: 50%;
     background-color: var(--darkGrey);
+    padding: 8px;
 }
 
-.fa-twitter{/*style twitter bouton*/
-    padding: 5px;
-}
-
-.fa-facebook-f{/*style facebook bouton*/
-    padding:  5px 9px; 
+.headerSocial-f{/*style facebook bouton*/
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: var(--darkGrey);
+    padding:  8px 12px;
 }
 
 .sourceNav{
@@ -195,6 +195,12 @@ header{
     font-size: 1.3em;
 }
 
+.underline{
+    border-bottom: solid 2px var(--grey);
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
 .articleMainCtr{/*style de l'ensemble de l'article*/
     height: auto;
     display: flex;
@@ -222,17 +228,12 @@ header{
     font-size: 1.05em;
 }
 
-.breakArticle{ /*définit une hauteur entre le titre et le texte*/
-    line-height: 60px;
-    border: 1px solid var(--black);
-}
-
 .articleText li{
     margin-top: 10px;
 }
 
 .frameCtrBg{/*Div contenant le background et l'agencement des deux div bouton d'achat et loca*/
-    background-image: url('../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule1.jpg');
+    background-image: url('/images/vehicule1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -308,16 +309,17 @@ header{
     flex-direction: column;
     justify-content: space-between;
     width: 350px;
-    height: 350px;
+    height: 370px;
     text-decoration: none;
 }
 
 .vehiculeRecentCtr a div{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--darkGrey);
-    height: 80px;
+    height: 100px;
 }
 
 .vehiculeRecentCtr a div h1{
@@ -347,6 +349,13 @@ header{
 .vehiculeRecentCtr a div h2 span{
     color: var(--black);
     text-decoration: line-through;
+}
+
+.underlineVehicule{
+    width: 90%;
+    position: absolute;
+    border-bottom: solid 1px #666;
+    bottom: 15px;
 }
 
 .nosQualiteCtr{/*contenaire de la section des qualités*/
@@ -403,7 +412,7 @@ header{
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule3.jpg');
+    background-image: url('/images/vehicule3.jpg');
 }
 
 .banniereVenteEtLocaCtr > div{/*positionne la div et définit une largeur diféérente de la classe utilisée précédemment*/
@@ -534,15 +543,14 @@ footer > div > div{/*div de chaque info*/
     padding: 0;
 }
 
-.fa-brands{
-    display: flex;
-    justify-content: space-around;
+.footerSocialButton{
+    display: flex !important;/*important force le flex car le display inline block et mis par défaut par font awesome*/
     align-items: center;
     justify-content: center;
     border-radius: 0;
-    height: 40px;
-    width: 40px;
-    font-size: 1.2em;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
     margin-right: 15px;
     border: 1px solid transparent;
     background-color: var(--darkGrey);
@@ -565,7 +573,7 @@ footer > div > div{/*div de chaque info*/
     justify-content: center;
     align-items: center;
     height: 600px;
-    background-image: url('../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule3.jpg');
+    background-image: url('/images/vehicule3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -645,7 +653,7 @@ footer > div > div{/*div de chaque info*/
     width: 120% !important;
 }
 
-.formMessage > button{
+.formMessage > .submit{
     position: absolute;
     left: 0;
     bottom: -50px;

@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    </meta>
     <title>CLUB AUTO</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <!--Début import des polices google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,14 +21,14 @@
             <h1 class="col-3">Club auto</h1> <!--Titre du header-->
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
             <div class="headerLogo col-3">
-                <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icone-adresse.png">
+                <img src="/images/icone-adresse.png" alt="icone de l'adresse">
                 <div class="headerAdresse">
                     <h2 class="texteOrange headerFontSize">Adresse :</h2> <!--Adresse Header-->
-                    <adress>Avenue charles de gaulle 75000 paris</adress>
+                    <p>Avenue charles de gaulle 75000 paris</p>
                 </div>
             </div>
             <div class="headerLogo col-3">
-                <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon-telephone.png">
+                <img src="/images/icon-telephone.png" alt="icone du téléphone">
                 <div class="headerTel">
                     <h2 class="texteOrange headerFontSize">Téléphone :</h2><!--Téléphone Header-->
                     <p>01 23 45 67 89</p>
@@ -48,28 +47,27 @@
             <div class="socialMediaCtr col-1"><!--Div pour le style contenant les liens réseaux sociaux-->
                 <a href="">
                     <!--import du logo facebook-->
-                    <i class="fa-brands fa-facebook-f headerSocial" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook-f headerSocial-f" style="color: #ffffff;"></i>
                 </a>
                 <a href="">
                     <!--import du logo twitter-->
-                    <i class="fa-brands fa-twitter headerSocial" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter headerSocial-t" style="color: #ffffff;"></i>
                 </a>
             </div>
         </div>
     </header>
     <nav class="sourceNav"><!--barre de navigation-->
         <ul><!--liste de liens de navigation-->
-            <li><a href="">accueil</a></li>
-            <li><a href="">vente</a></li>
-            <li><a href="">location</a></li>
-            <li><a href="">contact</a></li>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="vehiculeDetails.html">vente</a></li>
+            <li><a href="vehiculeDetails.html">location</a></li>
+            <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
     <section><!--Bannière de haut de page avec une image et un titre-->
             <div id="banniereDesktop">
                 <img 
-                    src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule1.jpg"
-                    alt="Voitures de présentées les unes dérrière les autres">
+                    src="/images/vehicule1.jpg" alt="Voitures de présentées les unes dérrière les autres">
                 <div class="sectionTitle">
                     <h1 class="col-9">Club auto <span class="texteOrange">Le meilleur de l'automobile</span></h1><!--titre en dessous de la banière photo-->
                 </div>  
@@ -77,7 +75,7 @@
         <article class="articleMainCtr">
             <div class="articleMain col-7"><!--Div contenenant l'article de présentation n°1-->
                     <div class="articleImg"><!--image située à gauche de la présentation-->
-                        <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/clients.jpg">
+                        <img src="/images/clients.jpg" alt="image de clients satisfaits">
                     </div>
                 <div class="articleText">
                     <h1>Bienvenue chez <span class="texteOrange">Club auto</span></h1><!--titre et texte pour la présentation n°1-->
@@ -91,8 +89,8 @@
             </div>
             <div class="articleMain col-7"><!--Div contenenant l'article de présentation n°2-->
                 <div class="articleText">
-                    <h1>Le meilleur de l'automobile</h1><!--titre et texte pour la présentation n°2-->
-                    <br class="breakArticle">
+                    <h1 class="underline">Le meilleur de l'automobile</h1><!--titre et texte pour la présentation n°2-->
+                    <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium quidem iure nobis debitis eius
                         incidunt
                         repellat iste minima, exercitationem velit vel error veniam impedit dolore nulla fugit alias quo
@@ -112,7 +110,7 @@
                     </ul>
                 </div>
                 <div class="articleImg"><!--image située à droite de la présentation n°2-->
-                    <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/entretien.jpg">
+                    <img src="/images/entretien.jpg" alt="image d'un mécanicien travaillant">
                 </div>
             </div>
         </article> 
@@ -144,30 +142,33 @@
                     <li>
                         <a href=""><!--ancre contenant l'annonce du véhicule avec son prix et sa description-->
                             <img
-                                src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule2.jpg">
+                                src="/images/vehicule2.jpg" alt="Belle voiture devant un paysage">
                             <div>
                                 <h1><strong>BMW 535I, NAVI, LEATHER, ABS</strong></h1><!--marque et modèle du véhicule-->
                                 <h2>5 500 €</h2><!--prix du véhicule-->
+                                <span class="underlineVehicule"></span>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href=""><!--ancre contenant l'annonce du véhicule avec son prix et sa description-->
                             <img
-                                src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule2.jpg">
+                                src="/images/vehicule2.jpg" alt="Belle voiture devant un paysage">
                             <div>
                                 <h1><strong>BMW 328I, SPORT LINE BODY KIT</strong></h1><!--marque et modèle du véhicule-->
                                 <h2>8 000 €</h2><!--prix du véhicule-->
+                                <span class="underlineVehicule"></span>
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href=""><!--ancre contenant l'annonce du véhicule avec son prix et sa description-->
                             <img
-                                src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/vehicule2.jpg">
+                                src="/images/vehicule2.jpg" alt="Belle voiture devant un paysage">
                             <div>
                                 <h1><strong>FORD EXPLORER 2015 4WD</strong></h1><!--marque et modèle du véhicule-->
                                 <h2><span>9 000 €<!--prix barré--></span>8 200 €</h2><!--prix du véhicule-->
+                                <span class="underlineVehicule"></span>
                             </div>
                         </a>
                     </li>
@@ -177,7 +178,7 @@
             <h1>Pourquoi nous choisir ?</h1>
             <div class="lesQuatresQualitesCtr col-11"><!--div contenant les quatres div correspondantes à chaque qualité de l'entreprise-->
                 <div class="qualiteUnique"><!--div contenant le logo et le texte-->
-                    <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon1.png">
+                    <img src="/images/icon1.png" alt="icone représentant une qualité se l'entreprise">
                     <div>
                         <h2>Financement</h2><!--énoncé de la qualité-->
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut numquam eum sit quia, eveniet
@@ -185,7 +186,7 @@
                     </div>
                 </div>
                 <div class="qualiteUnique"><!--div contenant le logo et le texte-->
-                    <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon2.png">
+                    <img src="/images/icon2.png" alt="icone représentant une qualité se l'entreprise">
                     <div>
                         <h2>Réactivité de l'équipe technique</h2><!--énoncé de la qualité-->
                         <p>Nihil laboriosam eligendi, odit, fugiat quae doloremque excepturi hic placeat nisi temporibus
@@ -193,7 +194,7 @@
                     </div>
                 </div>
                 <div class="qualiteUnique"><!--div contenant le logo et le texte-->
-                    <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon3.png">
+                    <img src="/images/icon3.png" alt="icone représentant une qualité se l'entreprise">
                     <div>
                         <h2>A l'écoute de notre clientèle</h2><!--énoncé de la qualité-->
                         <p>Assumenda veniam minus ex ullam? Recusandae tempore nihil doloribus at amet, ea earum qui eos
@@ -201,7 +202,7 @@
                     </div>
                 </div>
                 <div class="qualiteUnique"><!--div contenant le logo et le texte-->
-                    <img src="../../Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/icon4.png">
+                    <img src="/images/icon4.png" alt="icone représentant une qualité se l'entreprise">
                     <div>
                         <h2>Service & maintenance</h2><!--énoncé de la qualité-->
                         <p>Quo aspernatur non nemo quidem voluptate praesentium velit atque eum, error asperiores nesciunt
@@ -249,16 +250,16 @@
                 <!--div Ctr social media links-->
                 <!--liste des liens social media-->
                 <div>
-                    <a href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-                    <a href=""><i class="fa-brands fa-google-plus-g" style="color: #ffffff;"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-google-plus-g" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands footerSocialButton fa-youtube" style="color: #ffffff;"></i></a>
                 </div>
             </div>
         </div>
         <div class="copyright col-9"><!--div copyright etc..-->
-            <p>Copyright &#169 Club Auto - Tous droits réservés</p>
+            <p>Copyright &#169; Club Auto - Tous droits réservés</p>
         </div>
     </footer>
 </body>
