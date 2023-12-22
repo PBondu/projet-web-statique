@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>CLUB AUTO</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Début import des polices google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +21,14 @@
         <div class="headerCtr col-9">
             <h1 class="col-3">Club auto</h1> <!--Titre du header-->
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
-            <div class="headerLogo col-3">
-                <img src="/images/icone-adresse.png" alt="icone de l'adresse">
+            <div class="headerLogoAdresse col-3">
+                <img class="headerAdresseImg" src="/images/icone-adresse.png" alt="icone de l'adresse">
                 <div class="headerAdresse">
                     <h2 class="texteOrange headerFontSize">Adresse :</h2> <!--Adresse Header-->
                     <p>Avenue charles de gaulle 75000 paris</p>
                 </div>
             </div>
-            <div class="headerLogo col-3">
+            <div class="headerLogoTel col-3">
                 <img src="/images/icon-telephone.png" alt="icone du téléphone">
                 <div class="headerTel">
                     <h2 class="texteOrange headerFontSize">Téléphone :</h2><!--Téléphone Header-->
@@ -54,6 +55,7 @@
                     <i class="fa-brands fa-twitter headerSocial-t" style="color: #ffffff;"></i>
                 </a>
             </div>
+            <button class="hamburgerMenu"><i class="fa-solid fa-bars" style="color: #6C98E1;"></i></button><!--menu burger pour les versions mobiles-->
         </div>
     </header>
     <nav class="sourceNav"><!--barre de navigation-->

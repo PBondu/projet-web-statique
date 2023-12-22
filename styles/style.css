@@ -53,14 +53,14 @@ header{/*contenaire principal du header*/
     height: 70px;
 }
 
-.headerLogo{/* Div permettant d'agencer le texte et le logo pour l'adresse et le téléphone dans le header*/
+.headerLogoAdresse, .headerLogoTel{/* Div permettant d'agencer le texte et le logo pour l'adresse et le téléphone dans le header*/
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 60px;
 }
 
-.headerLogo img{/*définit la taille des icones adresse et tél*/
+.headerLogoAdresse img, .headerLogoTel img{/*définit la taille des icones adresse et tél*/
     width: 35px;
     height: 35px;
 }
@@ -120,6 +120,13 @@ header{/*contenaire principal du header*/
     border-radius: 50%;
     background-color: var(--darkGrey);
     padding:  8px 12px;
+}
+
+.hamburgerMenu{/*design du menu burger pour mobile*/
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
 }
 
 .sourceNav{
@@ -569,7 +576,47 @@ footer > div > div{/*div de chaque info*/
     color: #CCC;
 }
 
-/*STYLE DE LA PAGE CONTACT.HTML*/
+/*
+Paramètres de responsivité
+*/
+
+/*media queries version mobile*/
+@media screen and (min-width: 1080px) {
+    .hamburgerMenu{/*cache le menu burger*/
+        display: none;
+    }
+}
+/*media queries version desktop*/
+@media screen and (max-width: 1080px) {
+    /*cache le header sauf le téléphone, la barre de nav et la bannière photo*/
+    .sourceNav, .socialMediaCtr, .horaireEtOuvertureCtr, .headerCtr h1, .headerLogoAdresse, #banniereDesktop img{
+        display: none;
+    }
+    .headerLogoTel{
+        width: 100% !important;
+    }
+    .sectionTitle{
+        position: static;
+        height: 100%;
+        padding: 30px 0;
+    }
+    #banniereDesktop{
+        position: static;
+        height: 100%;
+    }
+}
+
+
+
+
+
+/*
+
+
+STYLE DE LA PAGE CONTACT.HTML
+
+
+*/
 
 .contactSection{/*container de la section complète, bg et formulaire de contact inclus*/
     display: flex;
@@ -677,9 +724,15 @@ background-color: #547bb9;
 }
 
 
-/*STYLE DE LA PAGE VEHICULEDETAILS.HTML*/
+/*
 
-/*Rrefonte de la barre de navigation pour quitter l'opacité et la position absolute
+
+STYLE DE LA PAGE VEHICULEDETAILS.HTML
+
+
+*/
+
+/*Refonte de la barre de navigation pour quitter l'opacité et la position absolute
  des pages accueil et contact*/
 
 .navVehicule{
@@ -810,6 +863,7 @@ background-color: #547bb9;
     height: 120px;
     list-style-image: url('/Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/circle-check-solid.svg');
 }
+
 
 
 img{
