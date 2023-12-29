@@ -123,10 +123,9 @@ header{/*contenaire principal du header*/
 }
 
 .hamburgerMenu{/*design du menu burger pour mobile*/
-    height: 60px;
-    width: 60px;
     background-color: transparent;
     border: none;
+    font-size: 2em;
 }
 
 .sourceNav{
@@ -237,6 +236,7 @@ header{/*contenaire principal du header*/
 
 .articleText li{
     margin-top: 10px;
+    list-style: url('/images/check-solid.svg');
 }
 
 .frameCtrBg{/*Div contenant le background et l'agencement des deux div bouton d'achat et loca*/
@@ -603,6 +603,76 @@ Paramètres de responsivité
     #banniereDesktop{
         position: static;
         height: 100%;
+    }
+    .articleMain{
+        flex-direction: column;
+        width: 75% !important;
+    }
+    .articleImg, .articleText{
+        width: auto !important;
+        margin: 30px 0;
+    }
+    .frameCtr{
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .achatFrame{
+        width: 100% !important;
+    }
+    .vehiculeRecentTitle{
+        height: 85px;
+    }
+    .vehiculeRecentCtr ul{
+        overflow-y: scroll;
+    }
+    .vehiculeRecentCtr li{
+        margin-right: 30px;
+    }
+    .vehiculeRecentCtr li:last-child{
+        margin-right: 0px;
+    }
+    .vehiculeRecentCtr a{
+        width: 280px;
+        height: 350px;
+    }
+    .vehiculeRecentCtr a div{
+        flex-direction: column-reverse;
+        height: 130px;
+        justify-content: space-evenly;
+    }
+    .vehiculeRecentCtr a div h3{
+        width: 90%;
+    }
+    .vehiculeRecentCtr a div p{
+        margin-right: 25%;
+    }
+    .underlineVehicule{
+        bottom: 5px;
+    }
+    .nosQualiteCtr{
+        height: 900px;
+    }
+    .lesQuatresQualitesCtr{
+        flex-direction: column;
+        height: 75%;
+        align-items: center;
+    }
+    .banniereVenteEtLocaCtr > div{
+        width: 100% !important;
+        margin-left: 0%;
+        height: 65%;
+    }
+    footer{
+        height: auto;
+        padding: 30px 0;
+    }
+    footer > div{
+        flex-direction: column;
+        width: 90% !important;
+        height: 600px;
+    }
+    .newsletter input{
+        width:90%
     }
 }
 
