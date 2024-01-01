@@ -577,110 +577,6 @@ footer > div > div{/*div de chaque info*/
 }
 
 /*
-Paramètres de responsivité
-*/
-
-/*media queries version mobile*/
-@media screen and (min-width: 1080px) {
-    .hamburgerMenu{/*cache le menu burger*/
-        display: none;
-    }
-}
-/*media queries version desktop*/
-@media screen and (max-width: 1080px) {
-    /*cache le header sauf le téléphone, la barre de nav et la bannière photo*/
-    .sourceNav, .socialMediaCtr, .horaireEtOuvertureCtr, .headerCtr h1, .headerLogoAdresse, #banniereDesktop img{
-        display: none;
-    }
-    .headerLogoTel{
-        width: 100% !important;
-    }
-    .sectionTitle{
-        position: static;
-        height: 100%;
-        padding: 30px 0;
-    }
-    #banniereDesktop{
-        position: static;
-        height: 100%;
-    }
-    .articleMain{
-        flex-direction: column;
-        width: 75% !important;
-    }
-    .articleImg, .articleText{
-        width: auto !important;
-        margin: 30px 0;
-    }
-    .frameCtr{
-        flex-direction: column;
-        width: 100% !important;
-    }
-    .achatFrame{
-        width: 100% !important;
-    }
-    .vehiculeRecentTitle{
-        height: 85px;
-    }
-    .vehiculeRecentCtr ul{
-        overflow-y: scroll;
-    }
-    .vehiculeRecentCtr li{
-        margin-right: 30px;
-    }
-    .vehiculeRecentCtr li:last-child{
-        margin-right: 0px;
-    }
-    .vehiculeRecentCtr a{
-        width: 280px;
-        height: 350px;
-    }
-    .vehiculeRecentCtr a div{
-        flex-direction: column-reverse;
-        height: 130px;
-        justify-content: space-evenly;
-    }
-    .vehiculeRecentCtr a div h3{
-        width: 90%;
-    }
-    .vehiculeRecentCtr a div p{
-        margin-right: 25%;
-    }
-    .underlineVehicule{
-        bottom: 5px;
-    }
-    .nosQualiteCtr{
-        height: 900px;
-    }
-    .lesQuatresQualitesCtr{
-        flex-direction: column;
-        height: 75%;
-        align-items: center;
-    }
-    .banniereVenteEtLocaCtr > div{
-        width: 100% !important;
-        margin-left: 0%;
-        height: 65%;
-    }
-    footer{
-        height: auto;
-        padding: 30px 0;
-    }
-    footer > div{
-        flex-direction: column;
-        width: 90% !important;
-        height: 600px;
-    }
-    .newsletter input{
-        width:90%
-    }
-}
-
-
-
-
-
-/*
 
 
 STYLE DE LA PAGE CONTACT.HTML
@@ -931,8 +827,10 @@ STYLE DE LA PAGE VEHICULEDETAILS.HTML
     justify-content: space-around;
     padding-left: 2%;
     height: 120px;
-    list-style-image: url('/Ressources/Club Auto - Charte graphique&Images/Club Auto - Images/images/circle-check-solid.svg');
+    list-style-image: url('/images/circle-check-solid.svg');
 }
+
+
 
 
 
@@ -953,3 +851,205 @@ img{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+
+
+
+
+/*
+Paramètres de responsivité
+*/
+
+
+/*media queries version mobile*/
+@media screen and (min-width: 1080px) {
+    .hamburgerMenu{/*cache le menu burger*/
+        display: none;
+    }
+}
+/*media queries version desktop*/
+@media screen and (max-width: 1080px) {
+    /*cache le header sauf le téléphone, la barre de nav et la bannière photo*/
+    
+       
+    
+    /*
+    
+    STYLE
+    RESPONSIVE DE LA PAGE    INDEX.HTML
+
+    
+    */   
+    
+    
+    .sourceNav, .socialMediaCtr, .horaireEtOuvertureCtr, .headerCtr h1, .headerLogoAdresse, #banniereDesktop img, .navVehicule{
+        display: none;
+    }
+    .headerCtr{/*change la direction du flex afficher le titre et le tel du header de la page vehicule et contact*/
+        flex-direction: column;
+        height: auto;
+        padding: 25px 0;
+    }    
+    .headerLogoTel{
+        width: 100% !important;
+    }
+    .sectionTitle{
+        position: static;
+        height: 100%;
+        padding: 30px 0;
+    }
+    #banniereDesktop{
+        position: static;
+        height: 100%;
+    }
+    .articleMain{
+        flex-direction: column;
+        width: 75% !important;
+    }
+    .articleImg, .articleText{
+        width: auto !important;
+        margin: 30px 0;
+    }
+    .frameCtr{
+        flex-direction: column;
+        width: 100% !important;
+    }
+    .achatFrame{
+        width: 100% !important;
+    }
+    .vehiculeRecentTitle{
+        height: 85px;
+    }
+    .vehiculeRecentCtr ul{/*crée un scroll horizontal pour faire défiler les véhicules*/
+        overflow-y: scroll;
+    }
+    .vehiculeRecentCtr li{/*ajoute un espace entre les vignettes de véhicule*/
+        margin-right: 30px;
+    }
+    .vehiculeRecentCtr li:last-child{/*annule l'espace ajouté au dessus, à la dernière vignette pour qu'elle rentre dans sa frame*/
+        margin-right: 0px;
+    }
+    .vehiculeRecentCtr a{
+        width: 280px;
+        height: 350px;
+    }
+    .vehiculeRecentCtr a div{
+        flex-direction: column-reverse;
+        height: 130px;
+        justify-content: space-evenly;
+    }
+    .vehiculeRecentCtr a div h3{
+        width: 90%;
+    }
+    .vehiculeRecentCtr a div p{
+        margin-right: 25%;
+    }
+    .underlineVehicule{
+        bottom: 5px;
+    }
+    .nosQualiteCtr{
+        height: 900px;
+    }
+    .lesQuatresQualitesCtr{
+        flex-direction: column;
+        height: 75%;
+        align-items: center;
+    }
+    .banniereVenteEtLocaCtr > div{
+        width: 100% !important;
+        margin-left: 0%;
+        height: 65%;
+    }
+    footer{
+        height: auto;
+        padding: 30px 0;
+    }
+    footer > div{
+        flex-direction: column;
+        width: 90% !important;
+        height: 600px;
+    }
+    .newsletter input{
+        width:90%
+    }
+
+
+    /*
+    
+    STYLE
+    RESPONSIVE DE LA PAGE    VEHICULEDETAILS.HTML
+
+    
+    */
+
+    .vehiculeHeader{/*permet de regler le fond du header à */
+        height: auto;
+    }
+    .vehiculeTitle{
+        display: block !important; /*permet d'afficher le titre CLUB auto dans la page vehiculedétails et contact*/
+        width: 100%;
+    }       
+    .vehiculeSection{
+        width: 100%;
+        margin: 0;
+    }
+    .vehiculeSection > p{
+        font-size: 0.9em;
+        margin: 50px 10px;
+        border-bottom: solid #CCC 2px;
+    }
+    .vehiculeSectionTitle{
+        height: auto;
+    }
+    .vehiculeSectionTitle h2{
+        margin-left: 10px;
+    }
+    .vehiculeSectionNav{
+        flex-direction: column;
+        height: auto;
+    }
+    .vehiculeSectionNav a{
+        width: 100%;
+        margin: 0;
+        height: 60px;
+        font-weight: bold;
+    }   
+    .vehiculeSectionNav a:hover{
+        height: 60px;
+    }
+    .vehiculeSectionText{/*espace les paragraphes de texte*/
+        height: 750px; 
+    }
+    .vehiculeSectionOptions ul{
+        padding-left: 40px;
+    }
+    .vehiculeSectionOptions h2{
+        padding-left: 20px
+    }
+
+   /*
+    
+    STYLE
+    RESPONSIVE DE LA PAGE    CONTACT.HTML
+
+    
+    */
+    .contactSection{
+        height: 900px;
+    }
+    .formBg, .formCtr{
+        width: 90%;
+        height: 85%;
+        justify-content: space-around;
+    }
+    .formInfo{
+        flex-direction: column;
+    }
+    .prenomMail, .nomTel, .formMessage{
+        margin: 0;
+    }
+    .formMessage textarea{
+        width: 100% !important;
+    }
+
+}

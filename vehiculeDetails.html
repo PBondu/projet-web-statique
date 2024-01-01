@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>CLUB AUTO</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/check-solid.svg">
     <!--Début import des polices google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="vehiculeHeader">
         <div class="headerCtr col-9">
-            <h1 class="col-3">Club auto</h1> <!--Titre du header-->
+            <h1 class="col-3 vehiculeTitle">Club auto</h1> <!--Titre du header-->
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
             <div class="headerLogoAdresse col-3">
                 <img src="/images/icone-adresse.png" alt="icone de l'adresse">
@@ -55,6 +56,7 @@
                 </a>
             </div>
         </div>
+        <button class="hamburgerMenu"><i class="fa-solid fa-bars" style="color: #6C98E1;"></i></button><!--menu burger pour les versions mobiles-->
     </header>
     <nav class="navVehicule"><!--barre de navigation-->
         <ul><!--liste de liens de navigation-->
@@ -64,8 +66,8 @@
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
-    <section class="col-7"><!--Bannière de haut de page avec une image et un titre-->
-        <div class="vehiculeSection">
+    <section><!--Bannière de haut de page avec une image et un titre-->
+        <div class="vehiculeSection col-7">
             <p>ACCUEIL / VENTE / Bmw 535i, Navi, Leather, ABS</p><!--Url du catalogue de vente-->
             <div class="vehiculeSectionTitle">
                 <h2>Bmw 535i, Navi, Leather, ABS</h2><!-- marque et modèle u véhicule-->

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>CLUB AUTO</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/check-solid.svg">
     <!--Début import des polices google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +17,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="vehiculeHeader">
         <div class="headerCtr col-9">
-            <h1 class="col-3">Club auto</h1> <!--Titre du header-->
+            <h1 class="col-3 vehiculeTitle">Club auto</h1> <!--Titre du header-->
             <!--Div contenant l'adresse le téléphone et les horaires, permettant l'organisation du style au sein du header-->
             <div class="headerLogoAdresse col-3">
                 <img src="/images/icone-adresse.png" alt="icone de l'adresse">
@@ -55,6 +56,7 @@
                 </a>
             </div>
         </div>
+        <button class="hamburgerMenu"><i class="fa-solid fa-bars" style="color: #6C98E1;"></i></button><!--menu burger pour les versions mobiles-->
     </header>
     <nav class="sourceNav"><!--barre de navigation-->
         <ul><!--liste de liens de navigation-->
@@ -67,7 +69,7 @@
     <section class="contactSection"><!--début du formulaire de contact-->
         <div class="formBg">
             <div class="formCtr">
-                <h2>Contactez-nous</h2><!--titre du formulaire-->
+                <h2>Contactez nous</h2><!--titre du formulaire-->
                 <div class="formInfo">
                     <div class="prenomMail"><!--permet la disposition des champs de saisie-->
                         <div class="formLine"><!--permet la mise en forme du label et du champ de saisie-->
@@ -86,7 +88,7 @@
                         </div>
                         <div class="formLine"><!--permet la mise en forme du label et du champ de saisie-->
                             <label for="nom">Téléphone</label>
-                            <input type="tel" name="telephone" placeholder="Phone number">
+                            <input type="tel" name="telephone" placeholder="Entrez votre téléphone">
                         </div>
                     </div>
                     <div class="formMessage"><!--permet l'alignement du titre, champ et button-->
